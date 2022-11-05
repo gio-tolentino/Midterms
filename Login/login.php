@@ -27,18 +27,18 @@ session_start();
                 if(($_REQUEST['Username'] == $adminName && $_REQUEST['Password']==$adminPass)){
                     $_SESSION['Username'] = $adminName;
 
-                    echo '<div class="alert alert-success w-50 p-3 mx-auto mt-3"> 
+                    echo '<div class="alert alert-success w-25 p-3 mx-auto rounded-pill mt-3"> 
                     Welcome to the System: '.$adminName.'<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> 
                     </div>';
                 }
                 elseif(($_REQUEST['Username'] == $adminName2 && $_REQUEST['Password']==$adminPass2)){
                     $_SESSION['Username'] = $adminName2;
-                    echo '<div class="alert alert-success w-50 p-3 mx-auto mt-3">
+                    echo '<div class="alert alert-success w-25 p-3 mx-auto rounded-pill mt-3">
                     Welcome to the System: '.$adminName2.'<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> 
                     </div>'; 
                 }
                 else{
-                    echo '<div class="alert alert-danger w-50 p-3 mx-auto mt-3">
+                    echo '<div class="alert alert-danger w-25 p-3 mx-auto rounded-pill mt-3">
                     Invalid Username / Password <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                     </div>';
                 }         
@@ -54,19 +54,19 @@ session_start();
                 if(($_REQUEST['Username'] == $ManagerName && $_REQUEST['Password']==$ManagerPass)){
                     $_SESSION['Username'] = $ManagerName;
     
-                    echo '<div class="alert alert-success w-50 p-3 mx-auto mt-3">
+                    echo '<div class="alert alert-success w-25 p-3 mx-auto rounded-pill mt-3">
                     Welcome to the System: '.$ManagerName.'<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> 
                     </div>';
                 }
                 elseif(($_REQUEST['Username'] == $ManagerName2 && $_REQUEST['Password']==$ManagerPass2)){
                     $_SESSION['Username'] = $ManagerName2;
                     
-                    echo '<div class="alert alert-success w-50 p-3 mx-auto mt-3">
+                    echo '<div class="alert alert-success w-25 p-3 mx-auto rounded-pill mt-3">
                     Welcome to the System: '.$ManagerName2.'<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> 
                     </div>'; 
                 }
                 else{
-                    echo '<div class="alert alert-danger w-50 p-3 mx-auto mt-3">
+                    echo '<div class="alert alert-danger w-25 p-3 mx-auto rounded-pill mt-3">
                     Invalid Username / Password <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> 
                     </div>';
                 }         
@@ -80,12 +80,12 @@ session_start();
                 if(($_REQUEST['Username'] == $systemUsername && $_REQUEST['Password']==$systemUserPass)){
                     $_SESSION['Username'] = $systemUsername;
         
-                    echo '<div class="alert alert-success w-50 p-3 mx-auto mt-3">
+                    echo '<div class="alert alert-success w-25 p-3 mx-auto rounded-pill mt-3">
                     Welcome to the System: '.$systemUsername.'<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> 
                     </div>';
                 }
                 else{
-                    echo '<div class="alert alert-danger w-50 p-3 mx-auto mt-3">
+                    echo '<div class="alert alert-danger w-25 p-3 mx-auto rounded-pill mt-3">
                     Invalid Username / Password <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> 
                     </div>';
                 }         
